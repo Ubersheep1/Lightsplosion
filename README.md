@@ -7,6 +7,6 @@ To compile and run this project you will need:
 * At least a basic knowledge of how arduino [works](https://www.arduino.cc/en/Reference/HomePage)
 * An Arduino compaitble platform with 3K of RAM + 3 bytes per LED you connect (eg: 200 LEDs would require 3,600 bytes of RAM)
 
-#this project is a work in progress. Some of the functionality below works now, some does not. The ethernet and serial port stuff works. The help works, and the macro command kinda works... The fixed demo works too.
+##This project is a work in progress. Some of the functionality below works now, some does not. The ethernet and serial port stuff works. The help works, and the macro command kinda works... The fixed demo works too.
 
 You configure this project from the "definitions.h" file, where you tell the system how many LEDs are connected to it, and on which pin. Then you simply build and upload it to your platform (I use an [Arduino Mega 2560](https://www.arduino.cc/en/Main/ArduinoBoardMega2560)), then connect it to your LEDs and your home network. The program will run through a demo sequence which showcases some of the macros. If you listen on the serial port at 9600 baud, it will tell you the IP address it got from your network. You can open a connection to it on socket 160 (I suggest using [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) in raw mode to do this). Type "help" and press enter for a fully interactive help on the command line interface.
